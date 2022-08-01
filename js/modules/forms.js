@@ -15,8 +15,6 @@ function forms() {
         bindPostData(item);
     });
 
-    // Ex. 90
-
     const postData = async (url, data) => {
         const res = await fetch(url, {
             method: 'POST',
@@ -51,17 +49,6 @@ function forms() {
             formData.forEach((item, i, arr) => {
                 console.log(`item = ${item}, i = ${i}, arr = ${arr})`);
             });
-
-            // const object = {};
-            // formData.forEach(function (value, key) {
-            //     object[key] = value;
-            // });
-            // console.log(object);
-
-            // пример: 
-            // const obj = { a: 23, b: 50 };
-            // console.log(Object.entries(obj));
-            // console.log(Object.fromEntries(Object.entries(obj)));
 
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
 

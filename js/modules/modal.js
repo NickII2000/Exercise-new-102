@@ -16,7 +16,6 @@ function modal() {
     function openModal() {
         modal.classList.add('show');
         modal.classList.remove('hide');
-        // modal.classList.toggle('show');
         document.body.style.overflow = 'hidden';
         clearInterval(modalTimerId);
         window.removeEventListener('scroll', showModalByScroll);
@@ -27,7 +26,6 @@ function modal() {
     function closeModal() {
         modal.classList.add('hide');
         modal.classList.remove('show');
-        // modal.classList.toggle('show');
         document.body.style.overflow = '';
     }
 

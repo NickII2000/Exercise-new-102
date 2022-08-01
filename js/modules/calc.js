@@ -1,5 +1,5 @@
 function calc() {
-    // Calc (Ex. 97, 98)
+    // Calc
 
     const result = document.querySelector('.calculating__result span');
     let sex, height, weight, age, ratio;
@@ -87,12 +87,12 @@ function calc() {
 
             if (input.value.match(/\D/g)) {
                 input.style.border = '1px solid red';
-                // моя вставка
+                // моя вставка, начало
                 input.value = input.value.replace(/\D/g, '');
                 setTimeout(() => {
                     input.style.border = 'none';
                 }, 300);
-                //
+                // моя вставка, конец
             } else {
                 input.style.border = 'none';
             }

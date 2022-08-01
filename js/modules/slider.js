@@ -1,5 +1,5 @@
 function slider() {
-    // Slider (Exercise 92, 93)
+    // Slider
 
     const slides = document.querySelectorAll('.offer__slide'),
         slider = document.querySelector('.offer__slider');
@@ -32,7 +32,7 @@ function slider() {
 
     const indicators = document.createElement('ol'),
         dots = [];
-    indicators.classList.add('carousel-indicators'); // если бы стили были в CSS-файле
+    indicators.classList.add('carousel-indicators'); // если бы стили были в CSS-файле 'style_add_for_slider.css'
     indicators.style.cssText = `
         position: absolute;
         right: 0;
@@ -49,7 +49,7 @@ function slider() {
 
     for (let i = 0; i < slides.length; i++) {
         const dot = document.createElement('li');
-        dot.classList.add('dot'); // если бы стили были в CSS-файле
+        dot.classList.add('dot'); // если бы стили были в CSS-файле 'style_add_for_slider.css'
         dot.setAttribute('data-slide-to', i + 1);
         dot.style.cssText = `
             box-sizing: content-box;
