@@ -6,4 +6,13 @@ window.addEventListener('DOMContentLoaded', () => {
         calc = require('./modules/calc'),
         forms = require('./modules/forms'),
         slider = require('./modules/slider');
+
+    tabs();
+    modal();
+    timer();
+    cards();
+    calc();
+    forms();
+    slider();
+
 });
